@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout } from '../components/Layout';
 import { CheckCircle } from 'lucide-react';
 
 export const ThankYouPage: React.FC = () => {
+    useEffect(() => {
+        // TrackFlow Conversion Script
+        const metas = [
+            { name: "tf-product-id", content: "2b5716d1-4803-4725-b1c5-cd7030128c5d" },
+            { name: "tf-event", content: "form_submit" },
+            { name: "tf-value", content: "undefined" }
+        ].map(data => {
+            const meta = document.createElement('meta');
+            meta.name = data.name;
+            meta.content = data.content;
+            document.head.appendChild(meta);
+            return meta;
+        });
+
+        const script = document.createElement('script');
+        script.src = "https://www.trackflow.space/s/c.js";
+        script.defer = true;
+        document.head.appendChild(script);
+
+        return () => {
+            metas.forEach(meta => document.head.removeChild(meta));
+            document.head.removeChild(script);
+        };
+    }, []);
+
     return (
         <Layout>
             <div className="text-center space-y-6 animate-fade-in">

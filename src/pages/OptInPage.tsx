@@ -1,8 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout } from '../components/Layout';
 import { OptInForm } from '../components/OptInForm';
 
 export const OptInPage: React.FC = () => {
+    useEffect(() => {
+        // TrackFlow Base Script
+        const meta = document.createElement('meta');
+        meta.name = "tf-product-id";
+        meta.content = "2b5716d1-4803-4725-b1c5-cd7030128c5d";
+        document.head.appendChild(meta);
+
+        const script = document.createElement('script');
+        script.src = "https://www.trackflow.space/s/b.js";
+        script.defer = true;
+        document.head.appendChild(script);
+
+        return () => {
+            document.head.removeChild(meta);
+            document.head.removeChild(script);
+        };
+    }, []);
+
     return (
         <Layout>
             <div className="flex flex-col gap-8 text-center animate-fade-in">
