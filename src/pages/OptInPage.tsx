@@ -29,7 +29,7 @@ export const OptInPage: React.FC = () => {
                         The Simple YouTube Content Planner Built to Generate Leads<br className="hidden md:block" /> Over Views
                     </h1>
                     <p className="text-xl text-gray-300 font-medium">
-                        Delivered direct to your inbox
+                        Delivered Direct to Your Inbox
                     </p>
                 </div>
 
