@@ -7,7 +7,7 @@ export const OptInPage: React.FC = () => {
         // TrackFlow Base Script
         const meta = document.createElement('meta');
         meta.name = "tf-product-id";
-        meta.content = "e55dc774-c0ee-4a6d-8cf4-5d823913dd96";
+        meta.content = "8613b55c-9797-4a09-ada0-fa1871ef0979";
         document.head.appendChild(meta);
 
         const script = document.createElement('script');
