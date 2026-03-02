@@ -26,10 +26,10 @@ export const OptInPage: React.FC = () => {
             <div className="flex flex-col gap-8 text-center animate-fade-in">
                 <div className="space-y-4">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight max-w-6xl mx-auto">
-                        The Simple YouTube Content Planner Built to Generate Leads<br className="hidden md:block" /> Over Views
+                        Know which videos<br className="hidden md:block" /> make you money.
                     </h1>
                     <p className="text-xl text-gray-300 font-medium">
-                        Delivered Direct to Your Inbox
+                        Get free Beta access now
                     </p>
                 </div>
 
