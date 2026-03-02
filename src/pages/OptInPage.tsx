@@ -7,7 +7,7 @@ export const OptInPage: React.FC = () => {
         // TrackFlow Base Script
         const meta = document.createElement('meta');
         meta.name = "tf-product-id";
-        meta.content = "8613b55c-9797-4a09-ada0-fa1871ef0979";
+        meta.content = "0eed4c71-763b-4649-96ae-f45dbe080255";
         document.head.appendChild(meta);
 
         const script = document.createElement('script');
@@ -29,7 +29,7 @@ export const OptInPage: React.FC = () => {
                         Know which videos<br className="hidden md:block" /> make you money.
                     </h1>
                     <p className="text-xl text-gray-300 font-medium">
-                        Get free Beta access now
+                        Tracks clicks, conversions, and revenue from your YouTube videos. Finally answer the question that matters.
                     </p>
                 </div>
 
