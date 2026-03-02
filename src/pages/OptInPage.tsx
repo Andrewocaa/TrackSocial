@@ -26,10 +26,13 @@ export const OptInPage: React.FC = () => {
             <div className="flex flex-col gap-8 text-center animate-fade-in">
                 <div className="space-y-4">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight max-w-6xl mx-auto">
-                        Know which videos<br className="hidden md:block" /> make you money.
+                        Know which videos make you money.
                     </h1>
                     <p className="text-xl text-gray-300 font-medium">
-                        Tracks clicks, conversions, and revenue from your YouTube videos. Finally answer the question that matters.
+                        Tracks clicks, conversions, and revenue from your YouTube videos.<br className="hidden md:block" /> Finally answer the question that matters.
+                    </p>
+                    <p className="text-lg text-gray-400 font-medium pt-2">
+                        Sign up for free access now
                     </p>
                 </div>
 
